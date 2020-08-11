@@ -1,0 +1,9 @@
+; We turn on Bazel compat to use most of their things in this repo.
+; There are some local changes to work around Bazel-isms that we are unlikely to ever support.
+[bazel]
+compatibility = true
+
+[parse]
+buildfilename = BUILD.plz
+buildfilename = BUILD
+buildfilename = BUILD.bazel
