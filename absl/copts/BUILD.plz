@@ -3,3 +3,9 @@ filegroup(
     srcs = ["configure_copts.bzl"],
     visibility = ["//absl/..."],
 )
+
+filegroup(
+    name = "GENERATED_copts.bzl",
+    srcs = ["GENERATED_copts.bzl"],
+    visibility = ["//absl/..."],
+)

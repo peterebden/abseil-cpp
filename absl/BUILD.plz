@@ -1,0 +1,44 @@
+config_setting(
+    name = "llvm_compiler",
+    values = {
+        "compiler": "clang",
+    },
+)
+
+config_setting(
+    name = "osx",
+    values = {
+        "cpu": "dummy",
+    },
+)
+
+config_setting(
+    name = "ios",
+    values = {
+        "cpu": "dummy",
+    },
+)
+
+config_setting(
+    name = "windows",
+    values = {
+        "cpu": "dummy",
+    },
+    visibility = [":__subpackages__"],
+)
+
+config_setting(
+    name = "ppc",
+    values = {
+        "cpu": "ppc",
+    },
+    visibility = [":__subpackages__"],
+)
+
+config_setting(
+    name = "wasm",
+    values = {
+        "cpu": "wasm32",
+    },
+    visibility = [":__subpackages__"],
+)
