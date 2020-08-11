@@ -1,0 +1,5 @@
+filegroup(
+    name = "configure_copts.bzl",
+    srcs = ["configure_copts.bzl"],
+    visibility = ["//absl/..."],
+)
