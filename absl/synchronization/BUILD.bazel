@@ -185,7 +185,7 @@ cc_test(
     srcs = ["mutex_test.cc"],
     copts = ABSL_TEST_COPTS,
     linkopts = ABSL_DEFAULT_LINKOPTS,
-    shard_count = 25,
+    # shard_count = 25,
     deps = [
         ":synchronization",
         ":thread_pool",

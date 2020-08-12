@@ -1,0 +1,45 @@
+# Library that defines the FRIEND_TEST macro.
+cc_library(
+    name = "gtest_prod",
+    hdrs = ["googletest/include/gtest/gtest_prod.h"],
+    includes = ["googletest/include"],
+)
+
+# Google Test including Google Mock
+cc_library(
+    name = "gtest",
+    srcs = glob(
+        include = [
+            "googletest/src/*.cc",
+            "googletest/src/*.h",
+            "googletest/include/gtest/**/*.h",
+            "googlemock/src/*.cc",
+            "googlemock/include/gmock/**/*.h",
+        ],
+        exclude = [
+            "googletest/src/gtest-all.cc",
+            "googletest/src/gtest_main.cc",
+            "googlemock/src/gmock-all.cc",
+            "googlemock/src/gmock_main.cc",
+        ],
+    ),
+    hdrs = glob([
+        "googletest/include/gtest/*.h",
+        "googlemock/include/gmock/*.h",
+    ]),
+    copts = ["-pthread"],
+    features = [],
+    includes = [
+        "googlemock",
+        "googlemock/include",
+        "googletest",
+        "googletest/include",
+    ],
+    linkopts = ["-lpthread"],
+)
+
+cc_library(
+    name = "gtest_main",
+    srcs = ["googlemock/src/gmock_main.cc"],
+    deps = [":gtest"],
+)
