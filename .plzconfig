@@ -8,3 +8,6 @@ buildfilename = BUILD.plz
 buildfilename = BUILD
 buildfilename = BUILD.bazel
 preloadbuilddefs = plz/compat.build_defs
+
+[cpp]
+testmain = ///com_google_googletest//:gtest_main

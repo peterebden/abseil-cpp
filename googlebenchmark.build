@@ -9,7 +9,6 @@ cc_library(
     ),
     hdrs = ["include/benchmark/benchmark.h"],
     linkopts = ["-pthread"],
-    strip_include_prefix = "include",
     visibility = ["//visibility:public"],
 )
 
@@ -17,7 +16,6 @@ cc_library(
     name = "benchmark_main",
     srcs = ["src/benchmark_main.cc"],
     hdrs = ["include/benchmark/benchmark.h"],
-    strip_include_prefix = "include",
     visibility = ["//visibility:public"],
     deps = [":benchmark"],
 )

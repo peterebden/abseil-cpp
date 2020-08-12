@@ -551,7 +551,7 @@ cc_test(
     srcs = ["internal/low_level_alloc_test.cc"],
     copts = ABSL_TEST_COPTS,
     linkopts = ABSL_DEFAULT_LINKOPTS,
-    tags = ["no_test_ios_x86_64"],
+    # tags = ["no_test_ios_x86_64"],
     deps = [
         ":malloc_internal",
         "//absl/container:node_hash_map",
@@ -577,7 +577,7 @@ cc_test(
     srcs = ["internal/thread_identity_benchmark.cc"],
     copts = ABSL_TEST_COPTS,
     linkopts = ABSL_DEFAULT_LINKOPTS,
-    tags = ["benchmark"],
+    # tags = ["benchmark"],
     visibility = ["//visibility:private"],
     deps = [
         ":base",
@@ -671,7 +671,7 @@ cc_binary(
     srcs = ["internal/periodic_sampler_benchmark.cc"],
     copts = ABSL_TEST_COPTS,
     linkopts = ABSL_DEFAULT_LINKOPTS,
-    tags = ["benchmark"],
+    # tags = ["benchmark"],
     visibility = ["//visibility:private"],
     deps = [
         ":core_headers",
@@ -757,7 +757,7 @@ cc_binary(
     srcs = ["internal/strerror_benchmark.cc"],
     copts = ABSL_TEST_COPTS,
     linkopts = ABSL_DEFAULT_LINKOPTS,
-    tags = ["benchmark"],
+    # tags = ["benchmark"],
     visibility = ["//visibility:private"],
     deps = [
         ":strerror",

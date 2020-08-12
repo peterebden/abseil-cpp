@@ -28,7 +28,6 @@ cc_library(
         "googlemock/include/gmock/*.h",
     ]),
     copts = ["-pthread"],
-    features = [],
     includes = [
         "googlemock",
         "googlemock/include",
@@ -36,10 +35,12 @@ cc_library(
         "googletest/include",
     ],
     linkopts = ["-lpthread"],
+    visibility = ["//visibility:public"],
 )
 
 cc_library(
     name = "gtest_main",
     srcs = ["googlemock/src/gmock_main.cc"],
     deps = [":gtest"],
+    visibility = ["//visibility:public"],
 )

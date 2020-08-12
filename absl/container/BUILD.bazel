@@ -102,7 +102,7 @@ cc_test(
     srcs = ["fixed_array_benchmark.cc"],
     copts = ABSL_TEST_COPTS + ["$(STACK_FRAME_UNLIMITED)"],
     linkopts = ABSL_DEFAULT_LINKOPTS,
-    tags = ["benchmark"],
+    # tags = ["benchmark"],
     deps = [
         ":fixed_array",
         "@com_github_google_benchmark//:benchmark_main",
@@ -172,7 +172,7 @@ cc_test(
     srcs = ["inlined_vector_benchmark.cc"],
     copts = ABSL_TEST_COPTS,
     linkopts = ABSL_DEFAULT_LINKOPTS,
-    tags = ["benchmark"],
+    # tags = ["benchmark"],
     deps = [
         ":inlined_vector",
         "//absl/base:core_headers",
@@ -901,7 +901,7 @@ cc_binary(
     ],
     copts = ABSL_TEST_COPTS,
     linkopts = ABSL_DEFAULT_LINKOPTS,
-    tags = ["benchmark"],
+    # tags = ["benchmark"],
     visibility = ["//visibility:private"],
     deps = [
         ":btree",
