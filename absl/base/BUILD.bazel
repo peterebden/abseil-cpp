@@ -463,7 +463,7 @@ cc_binary(
     testonly = 1,
     copts = ABSL_DEFAULT_COPTS,
     linkopts = ABSL_DEFAULT_LINKOPTS,
-    tags = ["benchmark"],
+    # tags = ["benchmark"],
     visibility = ["//visibility:private"],
     deps = [
         ":spinlock_benchmark_common",

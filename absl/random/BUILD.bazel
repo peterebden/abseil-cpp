@@ -489,7 +489,7 @@ cc_binary(
     ],
     copts = ABSL_TEST_COPTS,
     linkopts = ABSL_DEFAULT_LINKOPTS,
-    tags = BENCHMARK_TAGS,
+    # tags = BENCHMARK_TAGS,
     deps = [
         ":distributions",
         ":random",

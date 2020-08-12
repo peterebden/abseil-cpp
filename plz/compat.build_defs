@@ -2,6 +2,9 @@
 def load(filename, a=None, b=None, c=None, d=None, e=None, f=None):
     pass
 
+def absl_random_randen_copts_init():
+    pass
+
 ABSL_GCC_FLAGS = [
     "-Wall",
     "-Wextra",
@@ -34,3 +37,4 @@ ABSL_GCC_TEST_FLAGS = [
 ABSL_DEFAULT_COPTS = ABSL_GCC_FLAGS
 ABSL_DEFAULT_LINKOPTS = []
 ABSL_TEST_COPTS = ABSL_GCC_TEST_FLAGS
+ABSL_RANDOM_RANDEN_COPTS = []

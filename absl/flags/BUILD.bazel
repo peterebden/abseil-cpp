@@ -376,7 +376,7 @@ cc_binary(
         "flag_benchmark.cc",
     ],
     copts = ABSL_TEST_COPTS,
-    tags = ["benchmark"],
+    # tags = ["benchmark"],
     visibility = ["//visibility:private"],
     deps = [
         ":flag",
