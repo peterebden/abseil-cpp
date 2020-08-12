@@ -7,6 +7,7 @@ cc_library(
         ],
         exclude = ["src/benchmark_main.cc"],
     ),
+    includes = ["include"],
     hdrs = ["include/benchmark/benchmark.h"],
     linkopts = ["-pthread"],
     visibility = ["//visibility:public"],

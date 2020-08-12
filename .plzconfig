@@ -11,3 +11,5 @@ preloadbuilddefs = plz/compat.build_defs
 
 [cpp]
 testmain = ///com_google_googletest//:gtest_main
+defaultoptcppflags = --std=c++17 -O3 -pipe -DNDEBUG -Wall -Werror
+defaultdbgcppflags = --std=c++17 -g3 -pipe -DDEBUG -Wall -Werror
