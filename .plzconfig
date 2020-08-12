@@ -7,3 +7,4 @@ compatibility = true
 buildfilename = BUILD.plz
 buildfilename = BUILD
 buildfilename = BUILD.bazel
+preloadbuilddefs = plz/compat.build_defs

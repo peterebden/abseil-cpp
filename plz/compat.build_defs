@@ -1,0 +1,36 @@
+# Redefine load() builtin as a no-op.
+def load(filename, a=None, b=None, c=None, d=None, e=None, f=None):
+    pass
+
+ABSL_GCC_FLAGS = [
+    "-Wall",
+    "-Wextra",
+    "-Wcast-qual",
+    "-Wconversion-null",
+    "-Wmissing-declarations",
+    "-Woverlength-strings",
+    "-Wpointer-arith",
+    "-Wundef",
+    "-Wunused-local-typedefs",
+    "-Wunused-result",
+    "-Wvarargs",
+    "-Wvla",
+    "-Wwrite-strings",
+    "-Wno-missing-field-initializers",
+    "-Wno-sign-compare",
+]
+
+ABSL_GCC_TEST_FLAGS = [
+    "-Wno-conversion-null",
+    "-Wno-deprecated-declarations",
+    "-Wno-missing-declarations",
+    "-Wno-sign-compare",
+    "-Wno-unused-function",
+    "-Wno-unused-parameter",
+    "-Wno-unused-private-field",
+]
+
+
+ABSL_DEFAULT_COPTS = ABSL_GCC_FLAGS
+ABSL_DEFAULT_LINKOPTS = []
+ABSL_TEST_COPTS = ABSL_GCC_TEST_FLAGS

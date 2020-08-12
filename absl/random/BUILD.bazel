@@ -162,7 +162,6 @@ cc_library(
 cc_test(
     name = "bernoulli_distribution_test",
     size = "small",
-    timeout = "eternal",  # Android can take a very long time
     srcs = ["bernoulli_distribution_test.cc"],
     copts = ABSL_TEST_COPTS,
     linkopts = ABSL_DEFAULT_LINKOPTS,
@@ -178,7 +177,6 @@ cc_test(
 cc_test(
     name = "beta_distribution_test",
     size = "small",
-    timeout = "eternal",  # Android can take a very long time
     srcs = ["beta_distribution_test.cc"],
     copts = ABSL_TEST_COPTS,
     flaky = 1,
@@ -199,7 +197,6 @@ cc_test(
 cc_test(
     name = "distributions_test",
     size = "small",
-    timeout = "moderate",
     srcs = [
         "distributions_test.cc",
     ],
@@ -270,7 +267,6 @@ cc_test(
 cc_test(
     name = "poisson_distribution_test",
     size = "small",
-    timeout = "eternal",  # Android can take a very long time
     srcs = [
         "poisson_distribution_test.cc",
     ],
@@ -319,7 +315,6 @@ cc_test(
 cc_test(
     name = "gaussian_distribution_test",
     size = "small",
-    timeout = "eternal",  # Android can take a very long time
     srcs = [
         "gaussian_distribution_test.cc",
     ],
@@ -341,7 +336,6 @@ cc_test(
 cc_test(
     name = "uniform_int_distribution_test",
     size = "medium",
-    timeout = "long",
     srcs = [
         "uniform_int_distribution_test.cc",
     ],
