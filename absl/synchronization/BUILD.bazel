@@ -280,7 +280,7 @@ cc_test(
     ],
     copts = ABSL_TEST_COPTS,
     linkopts = ABSL_DEFAULT_LINKOPTS,
-    tags = ["no_test_ios_x86_64"],
+    tags = ["no_test_ios_x86_64", "manual"],
     deps = [
         ":synchronization",
         "//absl/base:core_headers",
